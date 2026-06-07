@@ -7,4 +7,6 @@ func main() {
 	var y int = 20
 	a := "hello world"
 	fmt.Println(x, y, a)
+
+	add(x, y)
 }
