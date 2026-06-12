@@ -25,5 +25,5 @@ func main() {
 	fmt.Println("Name:", user2.Name)
 	fmt.Println("Age:", user2.Age)
 
-	fmt.Println(user1)
+	// fmt.Println(user1)
 }
