@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
@@ -46,5 +48,52 @@ func main() {
 	var s3 []int
 
 	fmt.Println(s3)
+
+	//append
+
+	var slice []int                            // len= 0, cap = 0
+	slice = append(slice, 2, 0, 0, 8, 0, 3, 4) //len= 7 , cap =8 ...... we can append more like(slice,1,2,3...)
+
+	fmt.Println(slice)
+	fmt.Println("slice:", slice, "len:", len(slice), "capasity:", cap(slice))
+
+	/*
+
+		var x []int
+		x = append(x, 1)
+		x = append(x, 2)
+		x = append(x, 3)
+
+		y := x
+
+		x = append(x, 4)
+		y = append(y, 5)
+
+		x[0] = 10
+
+		fmt.Println(x)
+		fmt.Println(y)
+
+
+	*/
+
+	///////////////////////////
+
+	x := []int{1, 2, 3, 4, 5}
+	x = append(x, 6)
+	x = append(x, 7)
+
+	a := x[4:]
+
+	y := changeSlice(a)
+
+	fmt.Println(x)
+	fmt.Println(y)
+
+}
+func changeSlice(a []int) []int {
+	a[0] = 10
+	a = append(a, 11)
+	return a
 
 }
