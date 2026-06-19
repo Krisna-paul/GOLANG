@@ -28,6 +28,7 @@ func main() {
 	fmt.Println(object.Age)
 
 	p := &object
+
 	fmt.Println(*p)
 	fmt.Println(p.Name)
 	fmt.Println(p.ID)
